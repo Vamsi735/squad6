@@ -10,19 +10,19 @@ package edu.nwmissouri.zoo07group.squad6;
  */
 public class Doctor extends Human {
 
-    @Override
-    public void experience() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Doctor(String name) {
+        super(name);
     }
-
-    @Override
-    public void salary() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     @Override
     public void role() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.printf("Doctor has to perform opearations");
     }
-    
+    @Override
+    public void experience() {
+        System.out.printf("Doctor has 10 years of experience");
+    }
+    @Override
+    public void salary(){
+        System.out.printf("Doctor salary would be 120K dollars");
+    }
 }
