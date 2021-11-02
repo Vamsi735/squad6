@@ -11,21 +11,38 @@ package edu.nwmissouri.zoo07group.squad6;
  */
 public class Trainer extends Human{
     
+    /**
+     *
+     * @param name
+     * creating constructor
+     */
      public Trainer (String name) {
         super(name);
     }
+     /**
+     *overriding role method
+     */
     @Override
     public void role() {
         System.out.printf("Trainer has to train the animals to do some comedy actions infront of the audience");
     }
+    /**
+     *overriding experience method
+     */
     @Override
     public void experience() {
         System.out.printf("Trainer  has 17 years of experience");
     }
+    /**
+     *overriding salary method
+     */
     @Override
     public void salary(){
         System.out.printf("Trainer salary would be around 110K dollars");
     }
+    /**
+     *Creating a method with name preference
+     */
     public void preference(){
       System.out.println("Trainer used to train elephant and tiger");
     }
