@@ -14,6 +14,11 @@ public abstract class Human {
       public Human(String name) {
         this.name = name;
         }
+      enum Generation{
+        FIRST,
+        SECOND,
+        THIRD
+    }
       public abstract void experience();
       
        public abstract void salary();
