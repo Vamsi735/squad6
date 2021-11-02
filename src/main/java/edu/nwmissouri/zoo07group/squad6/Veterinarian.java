@@ -14,6 +14,7 @@ public class Veterinarian extends Human{
     public Veterinarian(String name) {
         super(name);
         }
+    
     @Override
     //Added role of veternarian
     public void role() {

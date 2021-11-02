@@ -15,6 +15,7 @@ public class Registrar extends Human{
     public Registrar(String name) {
         super(name);
     }
+   
     
     @Override
     //Added role of registrar
