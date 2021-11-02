@@ -26,4 +26,7 @@ public class Trainer extends Human{
     public void salary(){
         System.out.printf("Trainer salary would be around 110K dollars");
     }
+    public void preference(){
+      System.out.println("Trainer used to train elephant and tiger");
+    }
 }

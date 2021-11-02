@@ -24,5 +24,8 @@ public class Guide extends Human {
     public void role() {
         System.out.println("Role of the guide is to guide audience");
     }
+    public void workableDays() {
+    System.out.println("Weekly 3days is work days for guide");
+}
     
 }
