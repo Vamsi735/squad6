@@ -13,6 +13,10 @@ public class Doctor extends Human {
     public Doctor(String name) {
         super(name);
     }
+    enum Degree{
+        DM,
+        MBBS
+    }
     @Override
     public void role() {
         System.out.printf("Doctor has to perform opearations");
