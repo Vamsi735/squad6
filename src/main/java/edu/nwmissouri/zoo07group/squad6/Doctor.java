@@ -19,7 +19,7 @@ public class Doctor extends Human {
     }
     @Override
     public void experience() {
-        System.out.printf("Doctor has 10 years of experience");
+        System.out.printf("Doctor has 11 years of experience");
     }
     @Override
     public void salary(){

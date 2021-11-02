@@ -18,7 +18,7 @@ public class LegalAdvisor extends Human{
     }
     @Override
     public void experience() {
-        System.out.printf("LegalAdvisor  has 20 years of experience");
+        System.out.printf("LegalAdvisor  has 21 years of experience");
     }
     @Override
     public void salary(){
