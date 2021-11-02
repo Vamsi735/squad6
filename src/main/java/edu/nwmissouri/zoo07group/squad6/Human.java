@@ -6,7 +6,7 @@ package edu.nwmissouri.zoo07group.squad6;
 
 /**
  *
- * @author S545411
+ * @author Vamsi BHogireddy
  */
 public abstract class Human {
      protected String name = "no name";
