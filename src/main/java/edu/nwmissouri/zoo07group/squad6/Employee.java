@@ -8,6 +8,6 @@ package edu.nwmissouri.zoo07group.squad6;
  *
  * @author S545411
  */
-public class Employee implements Human {
+public class Employee extends Human {
     
 }

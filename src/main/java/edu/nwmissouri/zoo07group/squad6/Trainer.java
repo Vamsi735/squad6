@@ -8,6 +8,6 @@ package edu.nwmissouri.zoo07group.squad6;
  *
  * @author S545411
  */
-public class Trainer implements Human{
+public class Trainer extends Human{
     
 }

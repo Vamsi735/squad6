@@ -8,6 +8,6 @@ package edu.nwmissouri.zoo07group.squad6;
  *
  * @author S545411
  */
-public class Zoologist implements Human{
+public class Zoologist extends Human{
     
 }
