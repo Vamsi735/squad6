@@ -24,7 +24,7 @@ public class ZooDirector extends Human {
      */
     @Override
     public void role() {
-        System.out.printf("Doctor has to perform opearations");
+        System.out.printf("Directs how the zoo organises the events and all.");
     }
 
     /**
@@ -32,7 +32,7 @@ public class ZooDirector extends Human {
      */
     @Override
     public void experience() {
-        System.out.printf("Doctor has 11 years of experience");
+        System.out.printf("Zoo Director should have lot of experience.");
     }
 
     /**
@@ -40,13 +40,13 @@ public class ZooDirector extends Human {
      */
     @Override
     public void salary(){
-        System.out.printf("Doctor salary would be 120K dollars");
+        System.out.printf("Zoo Director salary would be 120K dollars");
     }
     /**
      * creating newPolicies method
      */
-     public void newPolicies(){
-        System.out.printf("To impliment new polivies and hiring");
+     public void newEvents(){
+        System.out.printf("Zoo Director should do direction for new events and all.");
     }
     
 }
