@@ -24,7 +24,7 @@ public class Zoologist extends Human {
      */
     @Override
     public void role() {
-        System.out.printf("Promoting the conservation of wildlife");
+        System.out.printf("Promoting the conservation of zoolife.");
     }
 
     /**
@@ -32,7 +32,7 @@ public class Zoologist extends Human {
      */
     @Override
     public void experience() {
-        System.out.printf("Zoologist has 13 years of experience");
+        System.out.printf("Zoologist should have enough expereince to deal with zoo life.");
     }
 
     /**
@@ -46,7 +46,7 @@ public class Zoologist extends Human {
      * created method WorkKnowledge
      */
      public void workKnowledge(){
-        System.out.printf("I have more knowledge on Lion");
+        System.out.printf("I have more knowledge on animals.");
     }
     
 }
