@@ -16,36 +16,50 @@ public class Registrar extends Human{
         super(name);
     }
    
+     /**
+     *overriding role method
+     */
     
     @Override
-    //Added role of registrar
+    
     public void role(){
         System.out.printf("maintain wide variety of records relating to animals ");
         
     }
     @Override
-    //Added experience of registrar
+    /**
+     * overriding experience method
+     */
     public void experience() {
         System.out.printf("Registrar has 15 years of experience");
     }
+    
     @Override
     
-    //Added salary of registrar
+    /**
+     *overriding salary method
+     */
     public void salary(){
         System.out.printf("Doctor salary would be 60k dollars");
     }
     
-    //Added about dataentry of registrar
+    /**
+     * Added about dataentry of registrar
+     */
     public void dataentry(){
         System.out.printf(" Follow procedures and apply data program techniques.");
         
        }
-    //Added languages of Registrar
+    /**
+     * Added languages of Registrar
+     */
     public void languages(){
         System.out.printf("Speak different languages");
         
     }
-    //Added organize of Registrar
+    /**
+     * Added organize of Registrar
+     */
     public void organize(){
          System.out.printf("Organise and classify records of prepared reports");
         
