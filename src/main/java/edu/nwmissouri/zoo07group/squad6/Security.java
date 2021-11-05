@@ -9,7 +9,71 @@ package edu.nwmissouri.zoo07group.squad6;
  * @author Vijay Kumar Chunchu(545712)
  */
 public abstract class Security extends Human{
+    private int salary;
+    private String location;
+    private  boolean hasfulltime;
+
+    /**
+     *
+     * @return
+     * returns salary
+     */
+    public int getSalary() {
+        return salary;
+    }
+
+    /**
+     *
+     * @param salary
+     * sets salary
+     */
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    /**
+     *
+     * @return
+     * returns location
+     */
+    public String getLocation() {
+        return location;
+    }
+
+    /**
+     *
+     * @param location
+     * sets location 
+     */
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    /**
+     *
+     * @return
+     * returns ishasSSn
+     */
+    public boolean hasfulltime() {
+        return hasfulltime;
+    }
+
+    /**
+     *
+     * @param hasfulltime
+     * returns has full time
+
+     */
+    public void hasfulltime(boolean hasfulltime) {
+        this.hasfulltime = hasfulltime;
+    }
+
      
+    /**
+     *
+     * @param name
+     * security constructor
+     */
     public Security(String name) {
         super(name);
     }

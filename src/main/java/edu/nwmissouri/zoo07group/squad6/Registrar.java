@@ -11,54 +11,118 @@ package edu.nwmissouri.zoo07group.squad6;
  */
 
 public class Registrar extends Human{
-    
+    private int salary;
+    private String location;
+    private  boolean hasfulltime;
+
+    /**
+     *
+     * @return
+     * returns salary
+     */
+    public int getSalary() {
+        return salary;
+    }
+
+    /**
+     *
+     * @param salary
+     * sets salary
+     */
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    /**
+     *
+     * @return
+     * returns location
+     */
+    public String getLocation() {
+        return location;
+    }
+
+    /**
+     *
+     * @param location
+     * sets location 
+     */
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    /**
+     *
+     * @return
+     * returns ishasSSn
+     */
+    public boolean hasfulltime() {
+        return hasfulltime;
+    }
+
+    /**
+     *
+     * @param hasfulltime
+     * returns has full time
+
+     */
+    public void hasfulltime(boolean hasfulltime) {
+        this.hasfulltime = hasfulltime;
+    }
+
+    /**
+     *
+     * @param name
+     *  constructor for register
+     */
     public Registrar(String name) {
         super(name);
     }
    
-     /**
-     *overriding role method
+    /**
+     *overrides role
      */
-    
     @Override
-    
     public void role(){
         System.out.printf("maintain wide variety of records relating to animals ");
         
     }
-    @Override
+
     /**
-     * overriding experience method
+     *overrides experience
      */
+    @Override
+    
     public void experience() {
         System.out.printf("Registrar has 15 years of experience");
     }
     
-    @Override
-    
     /**
-     *overriding salary method
+     * overrides salary
      */
-    public void salary(){
+    @Override
+   public void salary(){
         System.out.printf("Doctor salary would be 60k dollars");
     }
     
     /**
-     * Added about dataentry of registrar
+     *data entry method
      */
     public void dataentry(){
         System.out.printf(" Follow procedures and apply data program techniques.");
         
        }
+   
     /**
-     * Added languages of Registrar
+     * language method
      */
     public void languages(){
         System.out.printf("Speak different languages");
         
     }
+    
     /**
-     * Added organize of Registrar
+     * organize method
      */
     public void organize(){
          System.out.printf("Organise and classify records of prepared reports");

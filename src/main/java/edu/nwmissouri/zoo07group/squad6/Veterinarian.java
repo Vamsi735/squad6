@@ -10,43 +10,110 @@ package edu.nwmissouri.zoo07group.squad6;
  * Added Veterinarian  and their role is to assess the animals
  */
 public class Veterinarian extends Human{
+    private int salary;
+    private String location;
+    private  boolean hasfulltime;
+
+    /**
+     *
+     * @return
+     * returns salary
+     */
+    public int getSalary() {
+        return salary;
+    }
+
+    /**
+     *
+     * @param salary
+     * sets salary
+     */
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    /**
+     *
+     * @return
+     * returns location
+     */
+    public String getLocation() {
+        return location;
+    }
+
+    /**
+     *
+     * @param location
+     * sets location 
+     */
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    /**
+     *
+     * @return
+     * returns ishasSSn
+     */
+    public boolean hasfulltime() {
+        return hasfulltime;
+    }
+
+    /**
+     *
+     * @param hasfulltime
+     * returns has full time
+
+     */
+    public void hasfulltime(boolean hasfulltime) {
+        this.hasfulltime = hasfulltime;
+    }
+
    
+    /**
+     *
+     * @param name
+     * constructor
+     */
     public Veterinarian(String name) {
         super(name);
         }
     
     /**
-     *overriding role method
+     *overrides role
      */
     @Override
-    
     public void role() {
         System.out.printf("Examine animals to assess their health and diagnose problems");
     }
+    
     /**
-     * overriding experience method
+     * overrides experience
      */
     @Override
     
     public void experience() {
         System.out.printf("veternian have 20years of experience");
     }
+    
     /**
-     *overriding salary method
+     *overrides salary
      */
     @Override
     
     public void salary(){
         System.out.printf("veternarian avg salary is 80k dollars");
     }
+
     /**
-     * Added vaccinate method  of veternarian
+     *vaccine method
      */
     public void vaccinate(){
         System.out.println("Systemvaccinate animals against diseases");
     }
+    
     /**
-     * Added advise method  of veternarian
+     *advice method
      */
     public void advise(){
         System.out.println("Advise pet owners on nutrition, preventive healthcare and general care");

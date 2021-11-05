@@ -10,23 +10,90 @@ package edu.nwmissouri.zoo07group.squad6;
  */
 
 public class Zoocoordinator extends Human {
+private int salary;
+    private String location;
+    private  boolean hasfulltime;
 
+    /**
+     *
+     * @return
+     * returns salary
+     */
+    public int getSalary() {
+        return salary;
+    }
+
+    /**
+     *
+     * @param salary
+     * sets salary
+     */
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    /**
+     *
+     * @return
+     * returns location
+     */
+    public String getLocation() {
+        return location;
+    }
+
+    /**
+     *
+     * @param location
+     * sets location 
+     */
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    /**
+     *
+     * @return
+     * returns ishasSSn
+     */
+    public boolean hasfulltime() {
+        return hasfulltime;
+    }
+
+    /**
+     *
+     * @param hasfulltime
+     * returns has full time
+
+     */
+    public void hasfulltime(boolean hasfulltime) {
+        this.hasfulltime = hasfulltime;
+    }
+
+    /**
+     *
+     * @param name
+     * constructor for class
+     */
     public Zoocoordinator(String name) {
         super(name);
     }
+
+    /**
+     * overrides role method
+     */
     @Override
     public void role() {
         System.out.printf("my role is regarding helping tourists");
     }
   /**
-** over ride role
+* over ride role
  */
     @Override
     public void experience() {
         System.out.printf("as a coordinator has 11 years of experience");
     }
   /**
-** over ride experience
+* over ride experience
  */
     @Override
     public void salary(){
@@ -39,8 +106,5 @@ public class Zoocoordinator extends Human {
     {
             System.out.printf("as a coordinator i have good nice performance");
 }
-     /**
- *
-** over ride performance
- */
+    
 }

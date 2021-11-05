@@ -9,9 +9,23 @@ package edu.nwmissouri.zoo07group.squad6;
  * @author Vamsi BHogireddy
  */
 public abstract class Human {
-     protected String name = "no name";
-      protected String gender = "male";
-      public Human(String name) {
+
+    /**
+     * name with string
+     */
+    protected String name = "no name";
+
+    /**
+     * gender attribute
+     */
+    protected String gender = "male";
+
+    /**
+     *
+     * @param name
+     * Human constructor
+     */
+    public Human(String name) {
         this.name = name;
         }
       enum Generation{
@@ -19,11 +33,28 @@ public abstract class Human {
         SECOND,
         THIRD
     }
-      public abstract void experience();
+
+    /**
+     * experience method
+     */
+    public abstract void experience();
       
-       public abstract void salary();
-        public abstract void role();
-        public String getName() {
+    /**
+     * salary method
+     */
+    public abstract void salary();
+
+    /**
+     * role method
+     */
+    public abstract void role();
+
+    /**
+     *
+     * @return
+     * returns string
+     */
+    public String getName() {
         return name;
     }
       
