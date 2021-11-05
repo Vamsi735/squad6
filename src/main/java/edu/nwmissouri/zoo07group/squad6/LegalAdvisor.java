@@ -10,7 +10,65 @@ package edu.nwmissouri.zoo07group.squad6;
  */
 
 public class LegalAdvisor extends Human{
+    private int salary;
+    private String location;
+    private  boolean hasMBBS;
 
+    /**
+     *
+     * @return
+     * returns salary
+     */
+    public int getSalary() {
+        return salary;
+    }
+
+    /**
+     *
+     * @param salary
+     * set salary amount
+     */
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    /**
+     *
+     * @return
+     * returns location
+     */
+    public String getLocation() {
+        return location;
+    }
+
+    /**
+     *
+     * @param location
+     * sets location
+     */
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    /**
+     *
+     * @return
+     * returns isHasmbbs
+     * 
+     */
+    public boolean isHasMBBS() {
+        return hasMBBS;
+    }
+
+    /**
+     *
+     * @param hasMBBS
+     * sets mbbs degree boolean
+     */
+    public void setHasMBBS(boolean hasMBBS) {
+        this.hasMBBS = hasMBBS;
+    }
+    
     /**
      *
      * @param name
@@ -43,6 +101,10 @@ public class LegalAdvisor extends Human{
     public void salary(){
         System.out.printf("LegalAdvisor  salary would be 100K dollars");
     }
+
+    /**
+     *
+     */
     public void operation()
     {
                 System.out.printf("Doctor opearate for cardiac problems");

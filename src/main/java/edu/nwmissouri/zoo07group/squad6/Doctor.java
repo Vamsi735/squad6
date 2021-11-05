@@ -15,6 +15,69 @@ public class Doctor extends Human {
      * @param name
      * defines name
      */
+    private int salary;
+    private String location;
+    private  boolean hasMBBS;
+
+    /**
+     *
+     * @return
+     * returns salary
+     */
+    public int getSalary() {
+        return salary;
+    }
+
+    /**
+     *
+     * @param salary
+     * sets salay to value
+     */
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    /**
+     *
+     * @return
+     * returns getlocation
+     */
+    public String getLocation() {
+        return location;
+    }
+
+    /**
+     *
+     * @param location
+     * sets location value
+     */
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    /**
+     *
+     * @return
+     * returns isHasmbbs degree
+     */
+    public boolean isHasMBBS() {
+        return hasMBBS;
+    }
+
+    /**
+     *
+     * @param hasMBBS
+     * sets mbbs degree
+     */
+    public void setHasMBBS(boolean hasMBBS) {
+        this.hasMBBS = hasMBBS;
+    }
+    
+    /**
+     *
+     * @param name
+     * doctor constructor
+     */
     public Doctor(String name) {
         super(name);
     }
