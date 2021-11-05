@@ -8,6 +8,10 @@ package edu.nwmissouri.zoo07group.squad6;
  *
  * @author Vamsi Bhogireddy
  */
+/**
+ * 
+* Guide extending human
+ */
 public class Guide extends Human {
     private int salary;
     private String location;

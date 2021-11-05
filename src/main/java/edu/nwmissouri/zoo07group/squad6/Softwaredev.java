@@ -6,6 +6,11 @@ package edu.nwmissouri.zoo07group.squad6;
 /**
 @author  ruthvikbhairav
 **/
+/**
+ * 
+* software developer extending human
+ */
+
 public class Softwaredev extends Human {
     private int salary;
     private String location;

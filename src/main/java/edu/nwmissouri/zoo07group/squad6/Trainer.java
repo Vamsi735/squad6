@@ -9,6 +9,11 @@ package edu.nwmissouri.zoo07group.squad6;
  *
  * @author Vamsi Bhogireddy
  */
+/**
+ * 
+* Trainer extending human
+ */
+
 public class Trainer extends Human{
     private int salary;
     private String location;

@@ -9,6 +9,11 @@ package edu.nwmissouri.zoo07group.squad6;
  * @author Akshay krishna kintali
  * added Registrar and their role is to maintain wide variety of records regarding animals
  */
+/**
+ * 
+* register extending human
+ */
+
 
 public class Registrar extends Human{
     private int salary;

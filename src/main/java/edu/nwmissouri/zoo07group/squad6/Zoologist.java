@@ -8,6 +8,11 @@ package edu.nwmissouri.zoo07group.squad6;
  *
  * @author Vamsi Areti
  */
+/**
+ * 
+* zoologist extending human
+ */
+
 public class Zoologist extends Human {
   private int salary;
     private String location;

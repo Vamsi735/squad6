@@ -8,6 +8,10 @@ package edu.nwmissouri.zoo07group.squad6;
  *
  * @author Manoj Kota
  */
+/**
+ * 
+* legal advisor extending human
+ */
 
 public class LegalAdvisor extends Human{
     private int salary;

@@ -7,6 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  * @author Squad6
  */
+/**
+ * 
+* Spring boot application
+ */
+
 @SpringBootApplication
 public class Squad6Application {
 

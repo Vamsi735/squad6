@@ -9,6 +9,11 @@ package edu.nwmissouri.zoo07group.squad6;
  * @author Akshay krishna kintali
  * Added Veterinarian  and their role is to assess the animals
  */
+/**
+ * 
+* veterianarian extending human
+ */
+
 public class Veterinarian extends Human{
     private int salary;
     private String location;

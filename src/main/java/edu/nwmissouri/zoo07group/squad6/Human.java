@@ -8,6 +8,11 @@ package edu.nwmissouri.zoo07group.squad6;
  *
  * @author Vamsi BHogireddy
  */
+/**
+ * 
+* abstract  human class
+ */
+
 public abstract class Human {
 
     /**

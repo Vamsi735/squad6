@@ -13,6 +13,11 @@ package edu.nwmissouri.zoo07group.squad6;
  *
  * @author Manoj Kota
  */
+/**
+ * 
+* doctor extending human
+ */
+
 public class Doctor extends Human {
 
     /**

@@ -8,6 +8,11 @@ package edu.nwmissouri.zoo07group.squad6;
  *
  * @author Vijay Kumar Chunchu
  */
+/**
+ * 
+* visitor service manager extending human
+ */
+
 public abstract class VisitorServiceManager extends Human{
     private int salary;
     private String location;

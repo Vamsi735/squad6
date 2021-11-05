@@ -8,6 +8,11 @@ package edu.nwmissouri.zoo07group.squad6;
  *
  * @author Vamsi Areti
  */
+/**
+ * 
+* zoo director extending human
+ */
+
 public class ZooDirector extends Human {
 private int salary;
     private String location;

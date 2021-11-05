@@ -8,6 +8,11 @@ package edu.nwmissouri.zoo07group.squad6;
  *
  * @author Vijay Kumar Chunchu(545712)
  */
+/**
+ * 
+* security extending human
+ */
+
 public abstract class Security extends Human{
     private int salary;
     private String location;

@@ -8,6 +8,11 @@ package edu.nwmissouri.zoo07group.squad6;
  *
  * @author  ruthvikbhairav 
  */
+/**
+ * 
+* zoo coordinator extending human
+ */
+
 
 public class Zoocoordinator extends Human {
 private int salary;
