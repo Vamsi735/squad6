@@ -15,26 +15,39 @@ public class Veterinarian extends Human{
         super(name);
         }
     
+    /**
+     *overriding role method
+     */
     @Override
-    //Added role of veternarian
+    
     public void role() {
         System.out.printf("Examine animals to assess their health and diagnose problems");
     }
+    /**
+     * overriding experience method
+     */
     @Override
-    //Added experience of veternarian
+    
     public void experience() {
         System.out.printf("veternian have 20years of experience");
     }
+    /**
+     *overriding salary method
+     */
     @Override
-    //Added salary of veternarian
+    
     public void salary(){
         System.out.printf("veternarian avg salary is 80k dollars");
     }
-    //Added vaccinate method  of veternarian
+    /**
+     * Added vaccinate method  of veternarian
+     */
     public void vaccinate(){
         System.out.println("Systemvaccinate animals against diseases");
     }
-    //Added advise method of veternarian
+    /**
+     * Added advise method  of veternarian
+     */
     public void advise(){
         System.out.println("Advise pet owners on nutrition, preventive healthcare and general care");
         
