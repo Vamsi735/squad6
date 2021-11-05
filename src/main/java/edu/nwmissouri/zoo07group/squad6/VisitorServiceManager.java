@@ -6,7 +6,7 @@ package edu.nwmissouri.zoo07group.squad6;
 
 /**
  *
- * @author Vijay Kumar Chunchu
+ * @author Vijay Kumar Chunchu(S545712)
  */
 /**
  * 
