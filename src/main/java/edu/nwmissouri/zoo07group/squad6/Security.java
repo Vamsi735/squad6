@@ -85,7 +85,7 @@ public abstract class Security extends Human{
     
 
     /**
-     *  This method provides what is the role of Security
+     *  This method provides the role of Security
      */
     @Override
  public void role() {
