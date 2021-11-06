@@ -8,7 +8,7 @@ package edu.nwmissouri.zoo07group.squad6;
 **/
 /**
  * 
-* software developer extending human
+* software developer extending human 1
  */
 
 public class Softwaredev extends Human {
