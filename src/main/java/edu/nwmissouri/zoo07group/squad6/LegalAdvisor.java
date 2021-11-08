@@ -109,9 +109,9 @@ public class LegalAdvisor extends Human{
     /**
      *
      */
-    public void operation()
+    public void Legalproblems()
     {
-                System.out.printf("Doctor opearate for cardiac problems");
+     System.out.printf("He takes the control of legal problems");
 
     }
 
