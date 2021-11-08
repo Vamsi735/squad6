@@ -107,7 +107,7 @@ public class Registrar extends Human{
      */
     @Override
    public void salary(){
-        System.out.printf("Doctor salary would be 60k dollars");
+        System.out.printf("Registrar salary would be 60k dollars");
     }
     
     /**
