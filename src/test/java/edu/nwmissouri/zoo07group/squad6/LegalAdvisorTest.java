@@ -120,5 +120,12 @@ public class LegalAdvisorTest {
         assertEquals(expected, actual);
 
     }
+
+    /**
+     * Test of Legalproblems method, of class LegalAdvisor.
+     */
+    @Test
+    public void testLegalproblems() {
+    }
     
 }
