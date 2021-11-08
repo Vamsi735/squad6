@@ -125,5 +125,10 @@ public class Doctor extends Human {
      public void duties(){
         System.out.printf("he advices duties on their and experince");
     }
+     public static void main(String[] args) {
+         Doctor d=new Doctor("general");
+         d.duties();
+     }
+
     
 }
