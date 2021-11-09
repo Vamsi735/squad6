@@ -10,6 +10,10 @@ import java.util.ArrayList;
  *
  * @author Manoj Kota
  */
+/**
+ * 
+ * Legal Advisor group for Squad6 App
+ */
 public class LegalAdvisorGroup {
     private static ArrayList<LegalAdvisor> Le;
      public static int create() {
