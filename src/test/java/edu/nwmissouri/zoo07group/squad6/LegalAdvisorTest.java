@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @author S545400
+ * @author Manoj Kota
  */
 public class LegalAdvisorTest {
     private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
@@ -111,21 +111,17 @@ public class LegalAdvisorTest {
     /**
      * Test of operation method, of class LegalAdvisor.
      */
-    @Test
-    public void testOperation() {
-        String expected ="Doctor opearate for cardiac problems";
-        var LegalAdvisor = new LegalAdvisor("Law");
-        LegalAdvisor.operation();
-        String actual = outputStreamCaptor.toString().trim();
-        assertEquals(expected, actual);
-
-    }
-
+    
     /**
      * Test of Legalproblems method, of class LegalAdvisor.
      */
     @Test
     public void testLegalproblems() {
+         String expected ="He takes the control of legal problems";
+        var LegalAdvisor = new LegalAdvisor("Law");
+        LegalAdvisor.Legalproblems();
+        String actual = outputStreamCaptor.toString().trim();
+        assertEquals(expected, actual);
     }
     
 }
