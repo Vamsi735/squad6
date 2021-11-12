@@ -10,6 +10,10 @@ import java.util.ArrayList;
  *
  * @author Manoj Kota
  */
+/**
+ * 
+ * Doctor group for Squad6 App
+ */
 public class DoctorGroup {
      private static ArrayList<Doctor> Doc;
      public static int create() {

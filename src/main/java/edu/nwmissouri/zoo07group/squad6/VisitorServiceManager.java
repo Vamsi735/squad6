@@ -13,7 +13,7 @@ package edu.nwmissouri.zoo07group.squad6;
 * visitor service manager extending human
  */
 
-public abstract class VisitorServiceManager extends Human{
+public class VisitorServiceManager extends Human{
     private int salary;
     private String location;
     private  boolean hasfulltime;
