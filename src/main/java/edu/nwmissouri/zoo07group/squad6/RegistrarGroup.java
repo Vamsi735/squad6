@@ -11,10 +11,12 @@ import java.util.ArrayList;
  * @author S545155
  */
 public class RegistrarGroup {
+
     private static ArrayList<Registrar> Reg;
-     public static int create() {
+
+    public static int create() {
         Reg = new ArrayList<>();
-        
+
         Registrar d = new Registrar("sub");
         Reg.add(d);
         Reg.add(new Registrar("sub"));
@@ -22,7 +24,8 @@ public class RegistrarGroup {
 
         return Reg.size();
     }
-     public static void run() {
+
+    public static void run() {
         System.out.println("####################");
         System.out.println("Hey - look at the Profession!");
         Reg.forEach(Registrar -> {
@@ -36,5 +39,5 @@ public class RegistrarGroup {
         System.out.println("My Registrar Attributes");
         System.out.println("#################");
     }
-    
+
 }
