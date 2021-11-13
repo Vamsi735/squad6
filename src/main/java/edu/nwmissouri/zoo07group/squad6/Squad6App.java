@@ -20,7 +20,7 @@ public class Squad6App {
     private static final String GOODBYE_MESSAGE = "Thank you for visiting our App";
 
     // specify number of  animal types available 
-    private static final int NUMBER_human_types = 2;
+    private static final int NUMBER_human_types = 5;
 
 
     /**
@@ -38,7 +38,7 @@ public class Squad6App {
         var scanner = new Scanner(System.in);
 
         // Prompt for topic: ask if they want to see animals
-        System.out.println("Do you want to see animals (y/n)?");
+        System.out.println("Do you want to see zoo Staff (y/n)?");
         var animalInterestInput = scanner.next();
 
         // if yes, show list
@@ -54,13 +54,14 @@ public class Squad6App {
             do {
                 // Prompt for type: ask if they want to see animals
                 System.out.println();
-                System.out.println("What kind of human beings would you like to see?");
-                System.out.println("Enter a number to choose, 0 to exit.");
-
-                System.out.print(" 1.Doctor        ");
-                System.out.print(" 2.LegalAdvisor          ");
-               
-                try {
+                 System.out.print(" 1.Doctor");
+                System.out.print(" 2.LegalAdvisor");
+                System.out.print(" 3.Registar");
+                System.out.print(" 4.veterian");
+                System.out.print(" 5.softwartedeveloper");
+                System.out.println("What kind of zoo staff would you like to see?");
+                System.out.println("Enter a number to choose, 0 to exit");
+                       try {
                     typeNumberInput = scanner.nextInt();
                 } catch (Exception ex) {
                     typeNumberInput = 0;
@@ -73,8 +74,26 @@ public class Squad6App {
                 switch (typeNumberInput) {
                     case 1 -> {
                         DoctorGroup.create();
+                        DoctorGroup.run();
+                    }
+                    case 2 -> {
+                        LegalAdvisorGroup.create();
                         LegalAdvisorGroup.run();
                     }
+                    case 3-> {
+                        RegistrarGroup.create();
+                        RegistrarGroup.run();
+                    }
+                    case 4-> {
+                        VeterinarianGroup.create();
+                        VeterinarianGroup.run();
+                    }
+                    case 5-> {
+                        SoftwaredevGroup.create();
+                        SoftwaredevGroup.run();
+                    }
+
+
                     
                     default -> {
                     }
