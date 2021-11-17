@@ -24,7 +24,7 @@ public class VisitorServiceManagerGroup {
        Vsm.add(new VisitorServiceManager("Shuttles"));
        Vsm.add(new VisitorServiceManager("tickets"));
 
-        returnVsm.size();
+        return Vsm.size();
     }
      public static void run() {
         System.out.println("####################");
@@ -33,7 +33,7 @@ public class VisitorServiceManagerGroup {
             VisitorServiceManager.experience();
             VisitorServiceManager.role();
             VisitorServiceManager.salary();
-            VisitorServiceManager.Safety();
+            VisitorServiceManager.safety();
         });
         System.out.println("My VisitorServiceManager Attributes");
         System.out.println("#################");
