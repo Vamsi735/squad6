@@ -111,7 +111,7 @@ public class SoftwaredevTest {
      */
     @Test
     public void testAge() {
-        String expected ="my age is 22";
+        String expected ="my age is 22.";
         var Softwaredev = new Softwaredev("general");
         Softwaredev.age();
         String actual = outputStreamCaptor.toString().trim();
