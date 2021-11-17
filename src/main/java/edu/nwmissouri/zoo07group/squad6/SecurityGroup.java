@@ -19,12 +19,12 @@ public class SecurityGroup {
      public static int create() {
        Secur = new ArrayList<>();
         
-        Security s = new Security("MightyLion");
+        Security s = new Security("MightyLion") {};
        Secur.add(s);
-       Secur.add(new Security("MightyLion"));
-       Secur.add(new Security("MightyLion"));
+       Secur.add(new Security("MightyLion") {});
+       Secur.add(new Security("MightyLion") {});
 
-        returnSecur.size();
+        return Secur.size();
     }
      public static void run() {
         System.out.println("####################");

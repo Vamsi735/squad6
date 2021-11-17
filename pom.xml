@@ -1,91 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.6</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
-	<groupId>edu.nwmissouri.zoo07group</groupId>
-	<artifactId>squad6</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>squad6</name>
-	<description>project for zoo07group</description>
-	<properties>
-		<java.version>17</java.version>
-                <start-class>edu.nwmissouri.zoo07group.squad6.Squad6Application</start-class>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.6</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>edu.nwmissouri.zoo07group</groupId>
+    <artifactId>squad6</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>squad6</name>
+    <description>project for zoo07group</description>
+    <properties>
         <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.release>${java.version}</maven.compiler.release>
 
-	</properties>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-                <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
+        <junit>5.6.2</junit>
         
+        <!-- Plugin versions -->
+        <maven.shade>3.2.2</maven.shade>
+        <maven.clean>3.1.0</maven.clean>
+        <maven.resources>3.1.0</maven.resources>
+        <maven.compiler>3.8.1</maven.compiler>
+        <maven.surefire>3.0.0-M5</maven.surefire>
+        <maven.jar>3.2.0</maven.jar>
+        <maven.install>3.0.0-M1</maven.install>
+        
+        <maven.test.failure.ignore>true</maven.test.failure.ignore>
+    </properties>
+    <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <scope>test</scope>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <scope>test</scope>
-        </dependency>
-       <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-params</artifactId>
-            <scope>test</scope>
-        </dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-                 <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot</artifactId>
-            <type>jar</type>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
         </dependency>
-         <dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- Add JaCoCo dependency so we can display test results -->
+        
+        <dependency>
             <groupId>org.jacoco</groupId> 
             <artifactId>jacoco-maven-plugin</artifactId>
             <version>0.8.7</version>
         </dependency>
-	</dependencies>
+    </dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId><executions>
-                    <execution>
-                        <configuration>
-                            <mainClass>edu.nwmissouri.zoo07group.squad6.Squad6Application</mainClass>
-                        </configuration>
-                    </execution>
-                </executions>
-                                
-			</plugin>
-                        <!-- Previous plugins (extra functionality) -->
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>                 
+                <configuration>
+                    <mainClass>edu.nwmissouri.zoo07group.squad6.Squad6Application </mainClass>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
@@ -94,10 +79,12 @@
                     <reportOutputDirectory>${basedir}</reportOutputDirectory>
                     <destDir>docs</destDir>
                     <sourcepath>${basedir}/src/main/java/</sourcepath>
-                    <sourceFileExcludes>     
+                    <sourceFileExcludes>
                     </sourceFileExcludes>
                 </configuration>
-            </plugin> 
+            </plugin>
+            <!-- Configure Surefire plugin for the added JaCoCo report -->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -116,6 +103,9 @@
                     </execution>
                 </executions>
             </plugin>
+            
+            <!-- Configure JaCoCo plugin so we can display test results -->
+            
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -148,9 +138,38 @@
                 </executions>
                 
             </plugin>
+            <!-- Add Spring Boot Maven plugin -->
+            <!-- To get Maven to package our web app as an executable jar -->
             
-            <!-- Configure Surefire plugin for the added JaCoCo report -->
-		</plugins>
-	</build>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <configuration>
+                            <mainClass>edu.nwmissouri.zoo07group.squad6App</mainClass>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            
+            <!-- Previous plugins (extra functionality) -->
+           
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.3.1</version>
+                <configuration>
+                    <reportOutputDirectory>${basedir}</reportOutputDirectory>
+                    <destDir>docs</destDir>
+                    <sourcepath>${basedir}/src/main/java/</sourcepath>
+                    <sourceFileExcludes>     
+                    </sourceFileExcludes>
+                </configuration>
+            </plugin> 
+           
+        </plugins>
+    </build>
 
 </project>
