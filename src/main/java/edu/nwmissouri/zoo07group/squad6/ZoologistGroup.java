@@ -1,7 +1,23 @@
+
+package edu.nwmissouri.zoo07group.squad6;
+
+
+
+import java.util.ArrayList;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+
+
+/**
+ *
+ * @author Vamsi krishna Areti (S5449902)
+ */
+public class ZoologistGroup {
+    private static ArrayList<Zoologist> Zoo;
+
 package edu.nwmissouri.zoo07group.squad6;
 import java.util.ArrayList;
 /**
@@ -10,6 +26,7 @@ import java.util.ArrayList;
  */
 public class ZoologistGroup {
      private static ArrayList<Zoologist> Zoo;
+
 
     public static int create() {
         Zoo = new ArrayList<>();
@@ -35,5 +52,6 @@ public class ZoologistGroup {
         System.out.println("My Zoologist Attributes");
         System.out.println("#################");
     }
-    
+
 }
+
