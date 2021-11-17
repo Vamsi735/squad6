@@ -13,7 +13,7 @@ package edu.nwmissouri.zoo07group.squad6;
 * security extending human
  */
 
-public abstract class Security extends Human{
+public class Security extends Human{
     private int salary;
     private String location;
     private  boolean hasfulltime;
