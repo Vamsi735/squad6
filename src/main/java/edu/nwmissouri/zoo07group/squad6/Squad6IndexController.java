@@ -38,7 +38,7 @@ public class Squad6IndexController {
         model.addAttribute("id", idParam);
         model.addAttribute("name", "World");
         model.addAttribute("greeting", GREETING_MESSAGE);
-        model.addAttribute("animalMap",Suad6BuildSwitch.getAllAnimalMap());
+        //model.addAttribute("animalMap",Suad6BuildSwitch.getAllAnimalMap());
         model.addAttribute("customAnimalGroup", getCustomAnimalGroup(idParam));
         // associated with index.hmtl in src/main/resources/templates
         return "index";
