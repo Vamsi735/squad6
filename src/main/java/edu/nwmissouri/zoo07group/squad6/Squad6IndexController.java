@@ -129,6 +129,27 @@ public class Squad6IndexController {
                         SoftwaredevGroup.create();
                         SoftwaredevGroup.run();
                     }
+                    case 6-> {
+                        GuideGroup.create();
+                        GuideGroup.run();
+                    }
+                    case 7-> {
+                        TrainerGroup.create();
+                        TrainerGroup.run();
+                    }
+                    case 8-> {
+                        ZoologistGroup.create();
+                        ZoologistGroup.run();
+                    }
+                    case 9-> {
+                        ZoocoordinatorGroup.create();
+                        ZoocoordinatorGroup.run();
+                    }
+                    case 10-> {
+                       VisitorServiceManagerGroup.create();
+                        VisitorServiceManagerGroup.run();
+                    }
+
 
 
                     
