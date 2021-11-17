@@ -20,7 +20,7 @@ import java.util.TreeMap;
  * @author S545411
  */
 public class Squad6BuildSwitch {
-     private static final String relativePathToPackage = "/src/main/java/edu/nwmissouri/zoo11group";
+     private static final String relativePathToPackage = "/src/main/java/edu/nwmissouri/zoo07group";
     private static final String nonAnimalsFileString = "SOURCE_NON_ANIMAL_FILES.txt";
 
     public static Map<Integer, String> getAllAnimalMap() {
