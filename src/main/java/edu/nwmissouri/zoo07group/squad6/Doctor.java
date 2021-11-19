@@ -99,7 +99,7 @@ public class Doctor extends Human {
     /**
      *overriding role method
      */
-    @Override
+   
     public void role() {
         System.out.printf("Doctor has to perform opearations");
     }
@@ -107,7 +107,7 @@ public class Doctor extends Human {
     /**
      * overriding experience method
      */
-    @Override
+    
     public void experience() {
         System.out.printf("Doctor has 11 years of experience");
     }
@@ -115,7 +115,7 @@ public class Doctor extends Human {
     /**
      *overriding salary method
      */
-    @Override
+  
     public void salary(){
         System.out.printf("Doctor salary would be 120K dollars");
     }

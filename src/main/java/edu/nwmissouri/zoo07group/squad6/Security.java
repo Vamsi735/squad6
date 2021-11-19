@@ -12,7 +12,6 @@ package edu.nwmissouri.zoo07group.squad6;
  * 
 * security extending human
  */
-
 public class Security extends Human{
     private int salary;
     private String location;

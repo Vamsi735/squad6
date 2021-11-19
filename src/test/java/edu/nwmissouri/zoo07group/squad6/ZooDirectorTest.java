@@ -72,7 +72,7 @@ public class ZooDirectorTest {
     @Test
     public void testRole() {
         String expected ="Directs how the zoo organises the events and all.";
-        var ZooDirector = new ZooDirector("general");
+        var ZooDirector = new ZooDirector("curator");
         ZooDirector.role();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
@@ -84,7 +84,7 @@ public class ZooDirectorTest {
     @Test
     public void testExperience() {
         String expected ="Zoo Director should have lot of experience.";
-        var ZooDirector = new ZooDirector("general");
+        var ZooDirector = new ZooDirector("curator");
         ZooDirector.experience();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
@@ -96,7 +96,7 @@ public class ZooDirectorTest {
     @Test
     public void testSalary() {
         String expected ="Zoo Director salary would be 120K dollars";
-        var ZooDirector = new ZooDirector("general");
+        var ZooDirector = new ZooDirector("curator");
         ZooDirector.salary();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
@@ -108,7 +108,7 @@ public class ZooDirectorTest {
     @Test
     public void testNewEvents() {
         String expected ="Zoo Director should do direction for new events and all.";
-        var ZooDirector = new ZooDirector("general");
+        var ZooDirector = new ZooDirector("curator");
         ZooDirector.newEvents();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
