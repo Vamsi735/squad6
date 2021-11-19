@@ -107,5 +107,32 @@ public class Guide extends Human {
     public void workableDays() {
     System.out.println("Weekly 3days is work days for guide");
 }
+    public static void main(String[] args) {
+        
+        
+         double p=1.5;
+         int g=(int) p;
+         System.out.println("casted double"+g);
+
+         int c = 1;
+        int f= 0;
+         System.out.println("Exceptions were added");
+ 
+        try
+        {
+            int i = c/f;
+            System.out.println("division"+i);
+          
+        }
+          
+        // matching ArithmeticException
+        catch(ArithmeticException e)
+        {
+            // getMessage will print description of exception(here / by zero)
+            System.out.println("Exception"+e);
+        }
+     }
+
+    
     
 }
