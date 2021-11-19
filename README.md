@@ -9,3 +9,7 @@ Project Contributors:
  - [Vijay Kumar Chunchu](https://github.com/VKvarmach)
  - [Vamsi Areti](https://github.com/vamsiareti)
 ---
+Our API is hosted at 
+<https://vamsi735.github.io/squad6/edu/nwmissouri/zoo07group/squad6/package-summary.html>
+our test files are hosted at
+<https://vamsi735.github.io/Squad6test/>

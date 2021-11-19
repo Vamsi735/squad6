@@ -1,1 +1,1 @@
-web: java -jar target/Squad6App-1.0-SNAPSHOT.jar
+web: java -jar target/squad6-0.0.1-SNAPSHOT.jar

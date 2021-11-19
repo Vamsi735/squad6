@@ -78,7 +78,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId><executions>
                     <execution>
                         <configuration>
-                            <mainClass>edu.nwmissouri.zoo07group.squad6.Squad6Application</mainClass>
+                            <mainClass>edu.nwmissouri.zoo07group.squad6WebApp</mainClass>
                         </configuration>
                     </execution>
                 </executions>

@@ -1,8 +1,9 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package edu.nwmissouri.zoo07group.squad6;
+
 import static edu.nwmissouri.zoo07group.squad6.Squad6CheckFiles.getFileLines;
 import java.io.File;
 import java.io.IOException;
@@ -16,12 +17,11 @@ import java.util.TreeMap;
 
 /**
  *
- * @author S545400
+ * @author S545411
  */
-public class Suad6BuildSwitch {
-
-   private static final String relativePathToPackage = "/src/main/java/edu/nwmissouri/zoo07group/squad6";
-    //private static final String nonAnimalsFileString = "SOURCE_NON_ANIMAL_FILES.txt";
+public class Squad6BuildSwitch {
+     private static final String relativePathToPackage = "/src/main/java/edu/nwmissouri/zoo07group";
+    private static final String nonAnimalsFileString = "SOURCE_NON_ANIMAL_FILES.txt";
 
     public static Map<Integer, String> getAllAnimalMap() {
 
@@ -54,10 +54,12 @@ public class Suad6BuildSwitch {
         return animalMap;
     }
 
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String args[]) throws IOException {
+
         // find the files that should be excluded
-        
+        ArrayList<String> ignoreList = getNonCustomAnimalFiles();
+        System.out.println("Ignore these:");
+        ignoreList.forEach(f -> System.out.println(f));
 
         // process all found files, outputing custom animal code
         System.out.println("From all these in the package:");
@@ -122,15 +124,21 @@ public class Suad6BuildSwitch {
                     n++;
                 }
             }
+        }
+        System.out.println("===============================");
+        System.out.println("Update NUMBER_ANIMAL_TYPES = " + --n);
+        System.out.println("===============================");
+
     }
+
     /**
      * Get a list of expected files in the root project directory.
      *
      * @return String[] of expected file names
      */
-    /*private static ArrayList<String> getNonCustomAnimalFiles() {
+    private static ArrayList<String> getNonCustomAnimalFiles() {
         return getFileLines(nonAnimalsFileString);
-    }*/
+    }
 
     /**
      * Get our project package path as a String.
@@ -145,6 +153,5 @@ public class Suad6BuildSwitch {
     }
 
     
-
     
 }

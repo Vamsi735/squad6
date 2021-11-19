@@ -3,7 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package edu.nwmissouri.zoo07group.squad6;
-
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 /**
  *
  * @author Manoj Kota
@@ -114,6 +116,22 @@ public class LegalAdvisor extends Human{
      System.out.printf("He takes the control of legal problems");
 
     }
+     public static void main(String[] args) throws FileNotFoundException {
+          double d=99.5;
+          double y=d;
+          System.out.println("Automatically casted"+y);
+          System.out.println("Exceptions were added");
+
+          
+          try {
+      int[] m = {1, 2, 3,9};
+      System.out.println(m[11]);
+    } catch (Exception e) {
+      System.out.println("Something went wrong."+e);
+    }
+        
+     }
+     }
 
     
-}
+
