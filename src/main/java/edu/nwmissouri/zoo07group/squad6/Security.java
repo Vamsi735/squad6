@@ -13,7 +13,7 @@ package edu.nwmissouri.zoo07group.squad6;
 * security extending human
  */
 
-public abstract class Security extends Human{
+public class Security extends Human{
     private int salary;
     private String location;
     private  boolean hasfulltime;
@@ -114,4 +114,29 @@ public abstract class Security extends Human{
     public void reports(){
         System.out.println("Initiates and writes Accident/Incident/Hazard Reports and various other documentation required");
     }
+    public static void main(String[] args) {
+         
+        
+         double p=1.3;
+         int g=(int) p;
+         System.out.println("casted double"+g);
+
+         int c = 1;
+        int f= 0;
+         System.out.println("Exceptions were added");
+ 
+        try
+        {
+            int i = c/f;
+            System.out.println("division"+i);
+          
+        }
+          
+        // matching ArithmeticException
+        catch(ArithmeticException e)
+        {
+            // getMessage will print description of exception(here / by zero)
+            System.out.println("Exception"+e);
+        }
+     }
 }
