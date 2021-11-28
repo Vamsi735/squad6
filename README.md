@@ -12,5 +12,5 @@ Project Contributors:
 Our API is hosted at 
 <https://vamsi735.github.io/squad6/edu/nwmissouri/zoo07group/squad6/package-summary.html>
 our test files are hosted at
-<https://vamsi735.github.io/Squad6test/>
+<https://vamsi735.github.io/Squad6test/><br>
 Our app is deployed at:<https://squad6app.herokuapp.com/>
